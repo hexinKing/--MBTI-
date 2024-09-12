@@ -1,8 +1,8 @@
 import {View, Image} from '@tarojs/components'
-import './index.scss'
-import headerBg from '../../assets/headerBg.jpg'
 import {AtButton} from "taro-ui";
 import Taro from "@tarojs/taro";
+import './index.scss'
+import headerBg from '../../assets/headerBg.jpg'
 import GlobalFooter from "../../components/GlobalFooter";
 
 /**

@@ -1,14 +1,15 @@
+
 /**
  * 获取最佳题目评分结果
  * @param answerList
  * @param questions
  * @param question_results
  */
-
 export function getBestQuestionResult(answerList, questions, question_results) {
   // 初始化一个对象，用于存储每个选项的计数
   const optionCount = {};
 
+  // 例子
   // 用户选择 A, B, C
   // 对应 result：I, I, J
   // optionCount[I] = 2; optionCount[J] = 1
@@ -23,12 +24,10 @@ export function getBestQuestionResult(answerList, questions, question_results) {
         if (option.key === answer) {
           // 获取选项的result属性
           const result = option.result;
-
           // 如果result属性不在optionCount中，初始化为0
           if (!optionCount[result]) {
             optionCount[result] = 0;
           }
-
           // 在optionCount中增加计数
           optionCount[result]++;
         }
